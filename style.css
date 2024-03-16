@@ -1,0 +1,978 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    height: 10rem;
+    margin-top: -2rem;
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #0067f4;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+    z-index: 5;
+}
+
+/* ================== NAV ===================== */
+
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    z-index: 100000;
+}
+
+.nav .scrolled {
+    background-color: #fff;
+    transition: background-color 200ms linear;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler {
+    display: none;
+    border: none;
+    outline: none;
+}
+
+.toggler-icon {
+    width: 27px;
+    height: 3px;
+    background: #121212;
+    margin: 5px 0;
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-out 0s;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items li {
+    margin: 0 15px;
+}
+
+.menu-items li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;   
+}
+
+.menu-items li a:hover {
+    color: #4f47e4;
+}
+
+.navbar-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-social span {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 10px;
+    color: #6c6c6c;
+}
+
+.navbar-social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-social ul li{
+    margin: 0 7px;
+}
+
+.navbar-social ul li a{
+    font-size: 22px;
+    color: #6c6c6c;
+}
+
+
+/* ================== HOME ===================== */
+
+.back {
+    background-image: url('./Assets//images/6.jpg');
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay {    
+    background: linear-gradient(180deg, rgba(210,212,212,1) 1%, rgb(211,225,225,1) 11%, rgba(195,222,220,0) 79%);
+    width: 100%;
+    height: 100%;
+}
+
+.hero-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hero-shape img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.hero-text h6 {
+    color: #0b0a0ae5;
+}
+
+.header-btn {
+    margin-top: 22px;
+}
+
+.hero-text li {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+.main-btn {
+    border-radius: 50px;
+    overflow: hidden;
+    background: #fff;
+    line-height: 50px;
+    border: 0;
+    box-shadow: 0 3px 6px 0 rgb(0, 0, 0, 0.16);
+}
+
+.fa-play {
+    margin-left: 8px;
+    color: #646EE5;
+}
+
+.btn-one {
+    color: #fff;
+}
+
+.btn-one::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-position: right center;
+}
+
+.btn-one:hover::before {
+    background-image: linear-gradient(to left, #535CF1, #A147E4);
+    background-position: left center;
+}
+.btn-two:hover {
+    box-shadow: 0 3px 25px 0 rgb(0, 0, 0, 0.16);
+}
+
+
+/* ================== Services ===================== */
+
+#wrapper {
+    margin: 5rem 7rem 10rem 7rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.service h6 {
+    margin-bottom: 6rem;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.para {
+    text-align: center;
+    margin-left: 0;
+}
+
+.box {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.services i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #535CF1;
+}
+
+.services .service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.service-image {
+    width: 40%;
+}
+
+.service-image img {
+    width: 100%;
+}
+
+/* ================== Price ===================== */
+
+.pricing {
+    display: block;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.pricing h6 {
+    margin-bottom: 6rem;
+}
+
+.basic {
+    width: 385px;
+    height: 100%;
+    border: 1px solid #5353F1;
+    border-radius: 20px;
+}
+
+.basic h3 {
+     text-align: center;
+     font-weight: 300;
+     padding: 40px 0;   
+     background: #ecf0f1;
+     transition: all ease 0.6s;
+     border-radius: 20px 20px 0 0;
+     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.basic:hover h3 {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+}
+
+
+.standard h3 {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    color: #fff;
+}
+
+.price {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sign {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.currency {
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.cent {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
+.month {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    vertical-align: bottom;
+}
+
+.basic ul li {
+    border-top: 1px solid #ccc;
+    padding: 18px 0;
+    border-bottom: 1px solid #ccc;
+    color: #7f8c8d;
+}
+
+.basic ul li i{
+    padding-right: 5px;
+    color: #535CF1;
+}
+
+.pricing .header-btn {
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.pricing .header-btn a{
+    font-weight: normal;
+    font-size: 18px;
+    border-radius: 50px;
+    outline: medium none;
+    border: 1px solid #2ecc71;
+    color: #1d1d1d;
+    background: none;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.standard .header-btn a {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: 1px solid #2ecc71;
+}
+
+.pricing .basic:hover .header-btn a{
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: 1px solid #2ecc71;
+}
+
+.callToAct {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #910AFA), url('./Assets/images/2.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.parallax {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.parallax h3 {
+    color: #fff;
+}
+
+.parallax p {
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.call-news {
+    background-color: #fff;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 12px 0 12px 15px;
+}
+
+.call-news i {
+    padding-right: 10px;
+    color: #535CF1;
+    font-size: 18px;
+}
+
+.call-news input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.call-news button {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* ================== Contact ===================== */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form {
+    margin-top: 2rem;
+    width: 70%;
+}
+
+.form .first-row {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+
+.form .first-row input {
+    width: 47%;
+    height: 56px;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 16px;
+    outline: none;
+    margin: 0 10px;
+}
+
+.form textarea {
+    width:97%;
+    resize: none;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 16px;
+    outline: none;
+    font-family: sans-serif;
+    padding-top: 15px;
+}
+
+.form .header-btn {
+    width: 170px;
+    margin: 2.5rem auto;
+}
+
+.form .btn-two {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    outline: none;
+    padding: 10px 20px;
+}
+
+
+/* ================== FOOTER ===================== */
+
+footer {
+    background-color: #F4F6F7;
+    padding: 7rem;
+}
+
+.row-one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row-one ul {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+}
+
+.row-one a {
+    padding-right: 20px;
+    font-size: 26px;
+    color: #6c6c6c;
+}
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.second-row h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #6c6c6c;
+    padding-bottom: 20px;
+}
+
+.second-row li {
+    padding-bottom: 12px;
+}
+
+.second-row li a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #121212;
+}
+
+.first-row:nth-child(4) {
+    max-width: 300px;
+}
+
+.second-row .newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+.second-row .newsletter input {
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    padding: 0 24px;
+    border: 0;
+    background-color: rgba(33, 33, 33, 0.12);
+    font-weight: 500;
+    outline: none;
+    font-size: 14px;
+}
+
+.second-row .newsletter input::placeholder {
+    opacity: 1;
+    color: #6c6c6c;
+}
+
+.second-row .newsletter button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 0 50px 50px 0;
+    border: 0;
+    font-size: 20px;
+    background-color: none;
+    cursor: pointer;
+    color: #121212;
+}
+
+.second-row .text {
+    margin-top: 16px;
+}
+
+.copyright {
+    background-color: #2b354f;
+    padding: 23px 0;
+}
+
+.copyright p {
+    text-align: center;
+    color: #fff;
+}
+
+.copyright p a {
+    color: #1ABC9C;
+}
+
+
+@media only screen and (max-width: 946px) {
+
+
+    .nav {
+        padding: 1rem 3rem;
+    }
+    .navbar-social{
+        display: none;
+    }
+
+    .hero-text {
+        width: 60%;
+    }
+
+    .hero-text h3 {
+        font-size: 33px;
+    } 
+
+    #wrapper {
+        margin: 3rem 3rem 10rem 3rem;
+    }
+    
+    .service {
+        margin-bottom: 1rem;
+    }
+    
+    .service h6 {
+        margin-bottom: 3rem;
+    }
+    
+    .service-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .box {
+        width: 100%;
+    }
+    
+    .box-one {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        
+    .service-image {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .table {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .basic {
+       margin-bottom: 3rem;
+    }
+    
+    .callToAct {
+        margin-bottom: 5rem;
+    }
+    .parallax {
+        width: 80%;
+    }
+
+    .form {
+        width: 80%;
+    }
+    .form textarea {
+        width: 97%;
+    }
+
+}
+
+@media only screen and (max-width: 774px) {
+
+    .nav {
+        padding: 0.7rem 1rem;
+        background: none;
+    }
+    
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index: 1000000;
+    }
+    
+    .menu-bar {
+        position: absolute;
+        top: 55px;
+        right: -360px;
+        width: 200px;
+        height: 100vh;
+        background-color: rgba(256, 256, 256, 0.9);
+        transition: all 0.1s ease;
+    }
+    
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 40px 0;
+    }
+    
+    .menu-items li {
+        margin: 2rem 30px;
+    }
+    
+    .menu-items li a {
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;   
+    }
+    
+    .menu-items li a:hover {
+        color: #4f47e4;
+    }
+
+    .hero-text {
+        width: 80%;
+    }
+
+    .hero-text h6 {
+        font-size: 16px;
+    } 
+
+    #wrapper {
+        margin: 3rem 1rem 10rem 1rem;
+    }
+    
+    .service h3 {
+        font-size: 33px;
+    }
+    
+    .service h6 {
+        font-size: 16px;
+    }
+        
+    .service-image {
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .pricing h3 {
+        font-size: 33px;
+    }
+
+    .pricing h6 {
+        font-size: 16px;
+    }
+
+    .table {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .parallax {
+        width: 90%;
+    }
+
+    .parallax h3 {
+        font-size: 33px;
+    }
+
+    .parallax h6 {
+        font-size: 16px;
+    }
+
+    .call-news input {
+        font-size: 16px;
+    }
+
+    .call-news button {
+        font-size: 15px;
+    }
+
+    .form {
+        width: 80%;
+    }
+    .form textarea {
+        width: 97%;
+    }
+
+    .contact h3 {
+        font-size: 33px;
+    }
+
+    .contact h6 {
+        font-size: 16px;
+    }
+
+    .form .btn-two {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 4rem 1rem;
+    }
+
+    .second-row  {
+        flex-wrap: wrap;
+    }
+
+    .first-row {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 541px) {
+
+    .hero-text h3 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .header-btn .main-btn {
+        margin-top: 1rem;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .service h6 {
+        text-align: justify;
+    }
+
+    .service .services {
+        margin-left: 1.2rem;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .box-one {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .pricing {
+        margin-top: -5rem;
+    }
+
+    .pricing h3 {
+        font-size: 30px;
+    }
+
+    .pricing h6 {
+        font-size: 15px;
+    }
+
+    .parallax h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .parallax h6 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .call-news {
+        display: flex;
+    }
+
+    .call-news i {
+        padding-top: 15px;
+    }
+
+    .call-news input {
+        width: 50%;
+    } 
+
+    .form {
+        width: 100%;
+    }
+    .form .first-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 0;
+    }
+
+    .form .first-row input {
+        width: 100%;
+        margin: 1.2rem 0;
+    }
+
+    .form textarea {
+        margin-top: 1.2rem;
+        width: 100%;
+    }
+    
+}
